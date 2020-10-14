@@ -57,7 +57,8 @@ class MainActivity : AppCompatActivity() {
             strsi = strsi.replace("<td class=\"textC\">", "");
             strsi = strsi.replace("<br>", "\n");
             strsi = strsi.replace("</td>", "");
-
+            strsi = strsi.replace("&amp;", "&");
+            
             var arr = strsi.split("\n");
             var st = "";
             for (i in arr) {
